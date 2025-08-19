@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
-
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -78,19 +78,6 @@ class _SplashScreenState extends State<SplashScreen>
                   'assets/curtain.png',
                   fit: BoxFit.cover,
                   height: MediaQuery.of(context).size.height,
-                ),
-              );
-            },
-          ),
-          AnimatedBuilder(
-            animation: curtainAnimation,
-            builder: (context, child) {
-              return Positioned(
-                top: curtainAnimation.value + 50,
-                left: screenWidth / 2 - 90,
-                child: Image.asset(
-                  handClosed ? 'assets/hand_closed.png' : 'assets/hand_open.png',
-                  width: 200,
                 ),
               );
             },
