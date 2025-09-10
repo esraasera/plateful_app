@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen>
                 left: screenWidth / 2 - 90,
                 child: Image.asset(
                   handClosed ? 'assets/hand_closed.png' : 'assets/hand_open.png',
-                  width: 300,
+                  width: 200,
                 ),
               );
             },
