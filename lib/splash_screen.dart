@@ -72,8 +72,8 @@ class _SplashScreenState extends State<SplashScreen>
             builder: (context, child) {
               return Positioned(
                 top: curtainAnimation.value,
-                left: 12,
-                right: 12,
+                left: 0,
+                right: 0,
                 child: Image.asset(
                   'assets/curtain.png',
                   fit: BoxFit.cover,
