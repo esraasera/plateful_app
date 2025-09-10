@@ -82,20 +82,19 @@ class _SplashScreenState extends State<SplashScreen>
               );
             },
           ),
-          AnimatedBuilder(
-            animation: curtainAnimation,
-            builder: (context, child) {
-              return Positioned(
-                top: curtainAnimation.value + 50,
-                left: screenWidth / 2 - 90,
-                child: Image.asset(
-                  handClosed ? 'assets/hand_closed.png' : 'assets/hand_open.png',
-                  width: 200,
-                ),
-              );
-            },
-          ),
-
+          // AnimatedBuilder(
+          //   animation: curtainAnimation,
+          //   builder: (context, child) {
+          //     return Positioned(
+          //       top: curtainAnimation.value + 50,
+          //       left: screenWidth / 2 - 90,
+          //       child: Image.asset(
+          //         handClosed ? 'assets/hand_closed.png' : 'assets/hand_open.png',
+          //         width: 200,
+          //       ),
+          //     );
+          //   },
+          // ),
         ],
       ),
     );
